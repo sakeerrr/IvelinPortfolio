@@ -59,7 +59,34 @@ body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:var(--text);bac
 main, section, article{margin-bottom:20px;padding:12px;border:1px solid transparent}
 
 
-/* Responsive */
 @media(max-width:768px){
-.main-nav{flex-direction:column;align-items:flex-start;display:none}
-body[id^="page-"] .main-nav a{color:var(--muted)}}
+  .nav-toggle {
+    display:block;
+    cursor:pointer;
+  }
+
+  .main-nav {
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  .main-nav.active {
+    display:flex;
+  }
+  
+  .hero {
+    grid-template-columns:1fr;
+  }
+  .two-col {
+    grid-template-columns:1fr;
+  }
+  .projects-grid {
+    grid-template-columns:1fr;
+  }
+
+
+}
+
+

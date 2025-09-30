@@ -1,12 +1,11 @@
-// Minimal JS for nav toggle and simple form behaviour
 document.addEventListener('DOMContentLoaded',function(){
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.main-nav');
-if(toggle){
-toggle.addEventListener('click',()=>{
-if(nav.style.display==='flex') nav.style.display='none'; else nav.style.display='flex';
-})
-}
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  if(toggle && nav){
+    toggle.addEventListener('click', ()=> nav.classList.toggle('active'));
+  }
+});
+
 
 
 const form = document.getElementById('contactForm');
@@ -17,5 +16,4 @@ e.preventDefault();
 alert('Формата е изпратена (пример).');
 form.reset();
 })
-}
-});
+};
