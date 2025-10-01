@@ -12,7 +12,6 @@ const form = document.getElementById('contactForm');
 if(form){
 form.addEventListener('submit', function(e){
 e.preventDefault();
-// simple validation message
 alert('Формата е изпратена (пример).');
 form.reset();
 })
